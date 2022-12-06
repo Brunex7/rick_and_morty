@@ -1,0 +1,14 @@
+.barra input{
+    background-color: rgb(30, 30, 41);
+    border: 1px solid white;
+    box-shadow: 0 0 5px white;
+    border-radius: 5px;
+}
+
+.barra button{
+    color: white;
+    background-color: rgb(30, 30, 41);
+    border-radius: 5px;
+    border: 1px solid white;
+    margin: 8px;
+}

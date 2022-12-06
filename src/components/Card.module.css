@@ -1,0 +1,48 @@
+.container{
+    background-color: rgba(134, 134, 134, 0.459);
+    border-radius: 10px;
+    width: 180px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.692);
+    margin: 20px;
+    float: left;
+}
+
+.imag{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.buttContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttContainer button{
+    margin: 3px 3px 0 0 ;
+    color: aliceblue;
+    background-color: rgb(165, 42, 42);
+    border-radius: 5px;
+    border: 0;
+}
+
+.data{
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+}
+.data h2{
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.521);
+    background-color: rgba(0, 0, 0, 0.192);
+    padding: 0 5px;
+    font-size: large;
+    font-weight: 400;
+}
+
+.name{
+    color: white;
+    font-weight: 600;
+    text-align: center;
+
+}

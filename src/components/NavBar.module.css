@@ -1,0 +1,21 @@
+.NavContainer{
+    background-color: rgb(30, 30, 41);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding:  10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.644);
+}
+
+.imag{
+    width: 150px;
+    display: flex;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    
+}
+
