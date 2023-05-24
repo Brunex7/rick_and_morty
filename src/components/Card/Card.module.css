@@ -1,49 +1,52 @@
-.container{
-    background-color: rgba(134, 134, 134, 0.459);
-    border-radius: 10px;
-    width: 180px;
-    height: 350px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.692);
-    margin: 20px;
-    float: left;
+.card {
+    background-color: rgb(37, 37, 51);
+    margin: 30px;
+    border-radius: 15px 
 }
 
-.imag{
-    width: 100%;
-    border-radius: 10px;
+.imag img{
+    width: 250px;
+    height: 250px; 
+    border-radius: 15px 15px 0 0;
+    
+}
+.closeButton:hover {
+    opacity: 1;
 }
 
-.buttContainer{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.buttContainer button{
-    margin: 3px 3px 0 0 ;
-    color: aliceblue;
-    background-color: rgb(165, 42, 42);
-    border-radius: 5px;
-    border: 0;
+.closeButton {
+    position: absolute;
+    margin: 170px 100px;
+    background-color: #ffffff75;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .data{
     display: flex;
     justify-content: space-around;
+    font-weight: bolder;
     color: aliceblue;
 }
-.data h2{
+.data h2 {
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.521);
-    background-color: rgba(0, 0, 0, 0.192);
+    background-color:  #4CAF50;
     padding: 0 5px;
     font-size: large;
     font-weight: 400;
 }
 
-.name{
+.name {
     color: white;
     font-weight: 600;
     text-align: center;
-
+    text-decoration: none;
 }
