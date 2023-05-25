@@ -1,7 +1,7 @@
 import style from './NavBar.module.css'
 import SearchBar from '../SearchBar/SearchBar'
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function NavBar(props){
 
@@ -19,7 +19,8 @@ export default function NavBar(props){
                 <SearchBar onSearch={props.onSearch} />
             </div>
             <div className={style.links}> 
-                <a href="/about">About</a>      
+                <Link to="/about">About</Link>      
+                <Link to="/">Log Out</Link>      
             </div>        
         </nav>
 

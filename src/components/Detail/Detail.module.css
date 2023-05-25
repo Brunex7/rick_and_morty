@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin: 70px 160px;
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(19, 19, 19);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container img {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+.detail {
+    flex-grow: 1;
+    color: #ffff;
+}

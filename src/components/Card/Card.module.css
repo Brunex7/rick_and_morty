@@ -16,7 +16,7 @@
 
 .closeButton {
     position: absolute;
-    margin: 170px 100px;
+    margin: 100px 100px;
     background-color: #ffffff75;
     border: none;
     padding: 8px 12px;
@@ -45,6 +45,8 @@
 }
 
 .name {
+    display: flex;
+    justify-content: center;
     color: white;
     font-weight: 600;
     text-align: center;

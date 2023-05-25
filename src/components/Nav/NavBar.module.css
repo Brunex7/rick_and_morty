@@ -10,12 +10,15 @@
 .imag{
     width: 150px;
     display: flex;
+    cursor: pointer;
 }
 
 .links a{
     color: white;
     text-decoration: none;
     margin-right: 1rem;
+    font-size: large;
+    font-weight: bolder;
     
 }
 
