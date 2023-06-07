@@ -1,7 +1,8 @@
 import style from './NavBar.module.css'
 import SearchBar from '../SearchBar/SearchBar'
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import random from '../../media/random-svgrepo-com.svg'
 
 export default function NavBar(props){
 
@@ -10,7 +11,12 @@ export default function NavBar(props){
     const go2Home = () => {
         navigate('/home')
     }
-    
+
+    const generateRandomId = () => {
+        const randomId = Math.floor(Math.random() * 600);
+        props.onSearch(randomId.toString());
+    };
+      
 
     return(
         <nav className={style.NavContainer}>
@@ -18,10 +24,13 @@ export default function NavBar(props){
             <div className={style.barra}>
                 <SearchBar onSearch={props.onSearch} />
             </div>
+            <button onClick={generateRandomId} className={style.but} >
+                <img src={random} alt='aleatorio'/>
+            </button>   
             <div className={style.links}> 
                 <Link to="/about">About</Link>      
-                <Link to="/">Log Out</Link>      
-            </div>        
+                <Link to="/">Log Out</Link>   
+            </div>      
         </nav>
 
     )

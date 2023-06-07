@@ -15,9 +15,6 @@
 }
 
 .barra button{
-    color: white;
-    font-size: small;
-    font-weight: bold;
     height: 35px;
     background-color: rgb(37, 37, 51);
     border-radius: 5px;
@@ -26,4 +23,9 @@
     top: 0;
     right: 0;
     width: 80px;
+}
+
+.barra button img{
+    width: 20px;
+    height: 35px;
 }

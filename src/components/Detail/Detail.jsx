@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import style from './Detail.module.css';
+import back from '../../media/back-svgrepo-com.svg';
 
 
 export default function Detail (){
-    
+
+    const go2Home = () => {
+      navigate('/home')
+    } 
+   
+    const navigate = useNavigate()
+
     const {detailid} = useParams()
 
     const [character, setCharacter] = useState ({})
@@ -27,15 +34,21 @@ export default function Detail (){
 
 
     return (
+      <>
+      <button className={style.but}>
+         <img src={back} alt="back" onClick={go2Home}/>
+      </button>
         <div className={style.container}>
             <img src={character.image} alt= {character.name}/>
             <div className={style.detail}>
             <h1>{character.name}</h1>
-            <h3>{character.status}</h3>
-            <h3>{character.species}</h3>
-            <h3>{character.gender}</h3>
-            <h3>{character.origin?.name}</h3>
+            <h4>{character.status} - {character.species}</h4>
+            <p>Genres</p>
+            <h2>{character.gender}</h2>
+            <p>Location</p>
+            <h2>{character.location?.name}</h2>
             </div>
         </div>
+      </>
     )
 }

@@ -50,7 +50,7 @@
 // export default Landing
 
 import style from './Landing.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import validate from './Validation';
 
 const Landing = ({login}) => {
@@ -81,6 +81,20 @@ const Landing = ({login}) => {
     login(userData)
   }
 
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        alert('Usuario: prueba@gmail.com - Contraseña: hola123');
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
   return (
     <div className={style.container}>
       <div className={style.imageContainer}>
@@ -94,7 +108,7 @@ const Landing = ({login}) => {
         {errors.username && <p>{errors.username}</p>}
 
         <label htmlFor="password">Password: </label>
-        <input type="text" name="password" value={userData.password} onChange={handleChange} />
+        <input type="password" name="password" value={userData.password} onChange={handleChange} />
 
         <button>LOGIN</button>
         </form>
