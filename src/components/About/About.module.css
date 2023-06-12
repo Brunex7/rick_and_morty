@@ -3,6 +3,10 @@
     font-weight: 600;
 }
 
+.cont h2{
+    color: white;  
+}
+
 .cont {
     margin: 20px 120px;
     width: 1100px;
