@@ -1,20 +1,20 @@
-.barra{
+.barra {
     margin: 10px 0 0 0;
     position: relative;
-}
-
-.barra input{
+  }
+  
+  .barra input {
     box-shadow: 0 0 5px white;
-    width: 500px;
+    width: 100%;
     padding: 10px 0 10px 0;
     margin-bottom: 10px;
     background-color: rgb(37, 37, 51);
     border: none;
     border-radius: 5px;
     padding-right: 80px;
-}
-
-.barra button{
+  }
+  
+  .barra button {
     height: 35px;
     background-color: rgb(37, 37, 51);
     border-radius: 5px;
@@ -23,9 +23,41 @@
     top: 0;
     right: 0;
     width: 80px;
-}
-
-.barra button img{
+  }
+  
+  .barra button img {
     width: 20px;
     height: 35px;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .barra input {
+      width: 100%;
+      padding-right: 40px; 
+    }
+  
+    .barra button {
+      width: 40px;
+    }
+  
+    .barra button img {
+      width: 15px;
+      height: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .barra input {
+      padding-right: 20px; 
+    }
+  
+    .barra button {
+      width: 20px;
+    }
+  
+    .barra button img {
+      width: 10px;
+      height: 15px;
+    }
+  }
+  

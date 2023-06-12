@@ -6,7 +6,8 @@
 }
 
 .formContainer {
-    width: 500px;
+    max-width: 500px;
+    width: 80%;
     background-color: rgb(30, 30, 41);
     padding: 20px;
     border-radius: 10px;
@@ -14,21 +15,21 @@
 }
 
 .formContainer h2 {
-    color: #ffff;
+    color: #fff;
     text-align: center;
     margin-bottom: 20px;
     font-weight: bolder;
 }
 
-.formContainer label{
-    color: #ffff;
+.formContainer label {
+    color: #fff;
     font-size: medium;
     font-weight: bold;
 }
 
 .formContainer form input {
     width: 100%;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
     margin-bottom: 10px;
     background-color: rgb(37, 37, 51);
     border: none;
@@ -36,7 +37,7 @@
 }
 
 .formContainer form p {
-    color: #ffff;
+    color: #fff;
     font-weight: 400;
 }
 
@@ -55,12 +56,14 @@
 .imageContainer {
     position: absolute;
     top: 35px;
-    right: center;
-    z-index: 1
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
 }
 
 .imageContainer img {
-   max-width: 400px;
-   height: auto;
+    max-width: 30%;
+    height: auto;
 }
-  
+

@@ -1,32 +1,66 @@
-.cont p{
+.cont p {
     color: white;
     font-weight: 600;
 }
 
-.cont h2{
-    color: white;  
+.cont h2 {
+    color: white;
 }
 
 .cont {
-    margin: 20px 120px;
-    width: 1100px;
+    margin: 20px auto;
     padding: 10px;
+    max-width: 1100px;
 }
 
-.but{
+.but {
     display: flex;
-    margin: 0 120px;
+    margin: 0 auto;
     height: 35px;
     background-color: rgb(19, 19, 19);
     border-radius: 5px;
     border: none;
     width: 35px;
 }
-.but img{
+
+.but img {
     margin-top: 6px;
     width: 20px;
     height: 20px;
 }
-.but:hover{
+
+.but:hover {
     background-color: #4CAF50;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1200px) {
+    .cont {
+        margin: 20px 50px;
+    }
+
+    .but {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cont {
+        margin: 20px 30px;
+    }
+
+    .but {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cont {
+        margin: 20px 10px;
+    }
+
+    .but {
+        margin: 0 10px;
+    }
 }

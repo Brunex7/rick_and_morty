@@ -1,33 +1,30 @@
-.NavContainer{
+.NavContainer {
     background-color: rgb(30, 30, 41);
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding:  10px;
+    padding: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.644);
-}
-
-.imag{
-    width: 150px;
+  }
+  
+  .imag {
+    width: 50%;
+    max-width: 150px;
     display: flex;
     cursor: pointer;
-}
-
-.links a{
+  }
+  
+  .links a {
     color: white;
     text-decoration: none;
     margin-right: 1rem;
     font-size: large;
     font-weight: bolder;
-    
-}
-
-.links a:hover{
     position: relative;
     display: inline-block;
-}
-
-.links a::after{
+  }
+  
+  .links a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -36,28 +33,77 @@
     height: 3px;
     background-color: #4CAF50;
     transform: scaleX(0);
-    transition: tranform 0.3s ease-in-out;
-
-}
-
-.links a:hover::after{
-   transform:scaleX(1);
-}
-
-.but{
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .links a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .mobileOnly {
+    display: none;
+  }
+  
+  .but {
     height: 35px;
     background-color: rgb(37, 37, 51);
     border-radius: 5px;
     border: none;
     width: 35px;
-}
-
-.but:hover{
+  }
+  
+  .but:hover {
     background-color: #4CAF50;
-}
-
-
-.but img{
-    width: 20px;
-    height: 35px;
-}
+  }
+  
+  .but img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Media queries para adaptar estilos a diferentes tamaños de pantalla */
+  @media (max-width: 768px) {
+    .NavContainer {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .imag {
+      max-width: 40%;
+    }
+  
+    .links {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 1rem;
+    }
+  
+    .links a {
+      font-size: medium;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .hamburgerButton {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .hamburgerButton img {
+      width: 25px;
+      height: auto;
+    }
+  
+    .open .links {
+      display: flex;
+    }
+  
+    .open .links a {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  }
+  
