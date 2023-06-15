@@ -1,6 +1,7 @@
 import style from './Landing.module.css';
 import { useState } from 'react';
 import validate from './Validation';
+import Logo from '../../media/Logo.svg';
 
 const Landing = ({login}) => {
 
@@ -33,7 +34,7 @@ const Landing = ({login}) => {
   return (
     <div className={style.container}>
       <div className={style.imageContainer}>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg" alt="rick&morty" />
+        <img src={Logo} alt="rick&morty" />
       </div>
       <div className={style.formContainer}>
         <h2>WELCOME</h2>

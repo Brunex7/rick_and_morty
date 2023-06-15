@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import random from '../../media/random-svgrepo-com.svg'
 import hamburger from '../../media/menu-navigation-grid-1529-svgrepo-com.svg'
 import close from '../../media/close-bold-svgrepo-com.svg'
+import Logo from '../../media/Logo.svg'
 
 export default function NavBar(props) {
     const navigate = useNavigate();
@@ -40,7 +41,7 @@ export default function NavBar(props) {
   
     return (
       <nav className={`${style.NavContainer} ${isMenuOpen ? style.open : ''}`}>
-        <img className={style.imag} src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg" alt="logo" onClick={go2Home} />
+        <img className={style.imag} src={Logo} alt="logo" onClick={go2Home} />
           <SearchBar className={style.barra} onSearch={props.onSearch} />
         <button onClick={generateRandomId} className={style.but}>
           <img src={random} alt='aleatorio' />
